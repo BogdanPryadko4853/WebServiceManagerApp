@@ -1,0 +1,25 @@
+spring:
+  datasource:
+    url: jdbc:postgres://localhost:5432/postgres
+    username: postgres
+    password: rootroot
+  flyway:
+    schemas:
+      -public
+      -catalogue
+  jpa:
+    show-sql: true
+
+
+security:
+  oauth2:
+    resourceserver:
+      jwt:
+        issuer-uri:
+
+server:
+  port:8081
+
+logging:
+  level:
+    sql: info
