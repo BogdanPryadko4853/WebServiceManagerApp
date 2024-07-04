@@ -11,6 +11,6 @@ public record NewProductPayload(
         @NotBlank(message = "{catalogue.products.create.errors.title_is_blank}")
         String title,
         @Size(max = 1000, message = "{catalogue.products.create.errors.details_size_is_invalid}")
-        String description
+        String details
 ) {
 }
