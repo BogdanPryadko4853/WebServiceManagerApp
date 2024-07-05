@@ -1,4 +1,4 @@
 package com.example.controller.payload;
 
-public class UpdateProductPayload {
+public record UpdateProductPayload(String title,String details) {
 }
